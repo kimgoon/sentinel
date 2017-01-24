@@ -6,7 +6,6 @@
 
 namespace net {
 
-
 RedisComm::RedisComm(const std::string& name)
 :   m_name(name), m_host(""), m_port(0)
 {

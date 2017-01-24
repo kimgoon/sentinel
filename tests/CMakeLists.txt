@@ -14,3 +14,8 @@ add_executable(test_net_rediscomm "test_net_rediscomm.cpp")
 target_link_libraries(test_net_rediscomm
     cpp_redis
     net)
+
+add_executable(test_threads "test_threads.cpp")
+
+target_link_libraries(test_threads
+    pthread)
