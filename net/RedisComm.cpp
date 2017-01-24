@@ -31,7 +31,6 @@ bool RedisComm::disconnect()
 bool RedisComm::set_field(const std::string& key, const std::string& val)
 {
     m_client.set(key, val);
-
     m_client.sync_commit();
 
     return true;
@@ -39,7 +38,6 @@ bool RedisComm::set_field(const std::string& key, const std::string& val)
 
 bool RedisComm::get_field(const std::string& key, std::string& val)
 {
-
     //std::function<void(cpp_redis::reply&, std::string&)> cb
     //    = std::bind(&RedisComm::on_get_reply_as_string, this, std::placeholders::_1, std::placeholders::_2);
     //m_client.get(key, cb);

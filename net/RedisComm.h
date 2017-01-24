@@ -16,8 +16,6 @@ public:
     bool get_field(const std::string& key, std::string& val);
 
 
-
-
     // TODO
     bool get_field_async(const std::string& key, void* cb);
     bool set_field_async(const std::string& key, const std::string& val, void* cb);

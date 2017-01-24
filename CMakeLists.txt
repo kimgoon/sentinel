@@ -15,3 +15,4 @@ add_subdirectory(util)
 add_subdirectory(net)
 
 add_subdirectory(tests)
+add_subdirectory(apps)
